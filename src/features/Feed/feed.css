@@ -25,11 +25,6 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.post-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
-}
-
 /* Post header */
 .post-header {
   display: flex;
@@ -64,6 +59,7 @@
   padding: 12px 16px;
 }
 
+/* Generic paragraph styling */
 .post-footer p {
   margin: 0;
   font-size: 0.9rem;
@@ -71,6 +67,30 @@
   line-height: 1.4;
 }
 
+/* Like and comment icons row */
+.like-and-comment {
+  display: flex;
+  gap: 10px;
+  height: 23px;
+  margin-bottom: 5px;
+}
+
+/* Image likes */
+.post-footer p.image-likes {
+  font-weight: 900;
+  font-size: 0.7rem;
+  margin-top: 7px;
+  margin-bottom: 4px;
+}
+
+/* Caption bold username */
 .post-footer strong {
   margin-right: 5px;
+}
+
+/* Post date */
+.post-footer p.post-date {
+  margin-top: 3px;
+  font-weight: 500;
+  font-size: 0.7rem;
 }

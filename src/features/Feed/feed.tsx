@@ -47,9 +47,18 @@ export default function Feed() {
             </div>
 
             <div className="post-footer">
+              <div className="like-and-comment">
+                <img src="/feed-icons/post-like.svg" alt="" />
+                <img src="/feed-icons/post-comment.svg" alt="" />
+              </div>
+
+              <p className="image-likes">503 Likes</p>
+
               <p>
                 <strong>{post.username}</strong> {post.caption}
               </p>
+
+              <p className="post-date">22nd august</p>
             </div>
           </article>
         ))}
