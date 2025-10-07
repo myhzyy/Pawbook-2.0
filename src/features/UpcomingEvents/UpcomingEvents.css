@@ -1,0 +1,43 @@
+.meetups {
+  margin-top: 65px;
+  padding: 10px 14px;
+  font-family: "Arial", sans-serif;
+}
+
+.meetups h2 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.stories {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.story {
+  text-align: center;
+  flex: 0 0 auto;
+}
+
+.story img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #1e90ff;
+  object-fit: cover;
+}
+
+.event-title {
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.event-date {
+  font-size: 11px;
+  color: gray;
+  margin-top: 2px;
+}
