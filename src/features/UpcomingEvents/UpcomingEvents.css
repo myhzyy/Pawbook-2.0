@@ -1,11 +1,20 @@
+/* Meetups container */
 .meetups {
-  margin-top: 55px; /* reduced space above section */
-  padding: 0 10px; /* tighter side padding */
+  background-color: #e6e6e6;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: #fff;
+  padding: 0px 10px;
   font-family: "Arial", sans-serif;
+  border-bottom: 1px solid #e6e6e6;
 }
 
+/* Section heading */
 .meetups h2 {
-  font-size: 13px; /* smaller title text */
+  font-size: 13px;
   font-weight: 600;
   margin-bottom: 6px;
   display: flex;
@@ -13,54 +22,56 @@
   gap: 4px;
 }
 
-/* Horizontal story scroll area */
+/* Story row */
 .stories {
   display: flex;
-  gap: 10px; /* smaller spacing between circles */
+  gap: 17px;
   overflow-x: auto;
   padding-bottom: 6px;
-  scrollbar-width: none; /* hide scrollbar on Firefox */
+  scrollbar-width: none;
 }
 
 .stories::-webkit-scrollbar {
-  display: none; /* hide scrollbar on Chrome/Safari */
+  display: none;
 }
 
-/* Individual story container */
+/* Story container */
 .story {
   text-align: center;
   flex: 0 0 auto;
-  height: 100px; /* reduced height for compact look */
-  width: 70px; /* keeps consistent circle spacing */
+  height: 95px;
+  width: 70px;
 }
 
-/* Story image circle */
+/* Story image */
 .story img {
-  width: 55px; /* smaller story circle */
+  width: 55px;
   height: 55px;
   border-radius: 50%;
-  border: 2px solid #1e90ff; /* blue highlight border */
+  border: 2px solid #1e90ff;
   object-fit: cover;
   transition: transform 0.2s ease;
 }
 
 .story img:hover {
-  transform: scale(1.05); /* subtle hover grow effect */
+  transform: scale(1.05);
 }
 
-/* Event title below each story */
+/* Event title */
 .event-title {
-  font-size: 11.5px; /* smaller text */
+  font-size: 11.5px;
   font-weight: 500;
   margin-top: 3px;
+  margin-bottom: 1px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-/* Event date text below title */
+/* Event date */
 .event-date {
-  /* border: 2px solid red; */
-  font-size: 10px; /* smaller text */
+  font-size: 10px;
   color: gray;
+  margin-top: 0;
+  line-height: 1.2;
 }

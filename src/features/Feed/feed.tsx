@@ -3,7 +3,7 @@ import type { Post } from "../../types/posts";
 
 const posts: Post[] = [
   {
-    username: "LunaTheLab 🐶",
+    username: "LunaTheLab",
     image: "/images/Luna-the-lab/Luna-the-lab.jpg",
     caption: "Just had the best walk in the park!",
     avatar: "https://placedog.net/60",
