@@ -1,12 +1,11 @@
 /* Meetups container */
 .meetups {
-  background-color: #e6e6e6;
+  background: #fafafa;
   position: fixed;
   top: 60px;
   left: 0;
   width: 100%;
   z-index: 100;
-  background: #fff;
   padding: 0px 10px;
   font-family: "Arial", sans-serif;
   border-bottom: 1px solid #e6e6e6;

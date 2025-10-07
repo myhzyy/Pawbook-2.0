@@ -9,14 +9,14 @@ const posts: Post[] = [
     avatar: "https://placedog.net/60",
   },
   {
-    username: "Luna 🐕‍🦺",
-    image: "https://placedog.net/401/250",
+    username: "BabyJasper1",
+    image: "/images/BabyJasper1/BabyJasper-1.jpg",
     caption: "First puppy playdate today 🎉",
     avatar: "https://placedog.net/61",
   },
   {
-    username: "Max 🐾",
-    image: "https://placedog.net/402/250",
+    username: "SamsonTheDood",
+    image: "/images/Samson-thedood/samson-thedood-1.jpg",
     caption: "Sunbathing all afternoon ☀️",
     avatar: "https://placedog.net/62",
   },
@@ -58,7 +58,7 @@ export default function Feed() {
                 <strong>{post.username}</strong> {post.caption}
               </p>
 
-              <p className="post-date">22nd august</p>
+              <p className="post-date">22nd august 2025</p>
             </div>
           </article>
         ))}

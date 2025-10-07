@@ -1,2 +1,5 @@
-- upcoming events - fix sizing
-- feed images - fix layout
+- upcoming events - fix sizing ✅
+- feed images - fix layout ✅
+- implement dog meetups page
+- fix types
+- hide Upcoming events on Meetups

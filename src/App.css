@@ -1,0 +1,10 @@
+.page-container {
+  padding-top: 190px;
+  padding-bottom: 80px;
+  background-color: #fafafa;
+  min-height: 100vh;
+}
+
+.page-container > * {
+  transition: opacity 0.2s ease;
+}

@@ -3,26 +3,23 @@
   max-width: none;
   margin: 0;
   padding: 0 0 80px 0;
-  background: #fafafa;
+  background-color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 /* Posts layout */
 .posts {
-  margin-top: 195px;
+  margin-top: 5px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
 }
 
 /* Post card */
 .post-card {
   background: #fff;
-  border: 1px solid #e6e6e6;
   border-radius: 0;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* Post header */

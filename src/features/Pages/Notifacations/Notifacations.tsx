@@ -1,5 +1,5 @@
 import "./Notifacations.css";
-import type { Notification } from "../../types/notifacations";
+import type { Notification } from "../../types/Notifacations";
 
 const notifications: Notification[] = [
   {
