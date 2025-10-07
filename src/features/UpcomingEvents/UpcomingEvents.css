@@ -1,43 +1,66 @@
 .meetups {
-  margin-top: 65px;
-  padding: 10px 14px;
+  margin-top: 55px; /* reduced space above section */
+  padding: 0 10px; /* tighter side padding */
   font-family: "Arial", sans-serif;
 }
 
 .meetups h2 {
-  font-size: 15px;
+  font-size: 13px; /* smaller title text */
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
+/* Horizontal story scroll area */
 .stories {
   display: flex;
-  gap: 14px;
+  gap: 10px; /* smaller spacing between circles */
   overflow-x: auto;
-  padding-bottom: 8px;
+  padding-bottom: 6px;
+  scrollbar-width: none; /* hide scrollbar on Firefox */
 }
 
+.stories::-webkit-scrollbar {
+  display: none; /* hide scrollbar on Chrome/Safari */
+}
+
+/* Individual story container */
 .story {
   text-align: center;
   flex: 0 0 auto;
+  height: 100px; /* reduced height for compact look */
+  width: 70px; /* keeps consistent circle spacing */
 }
 
+/* Story image circle */
 .story img {
-  width: 70px;
-  height: 70px;
+  width: 55px; /* smaller story circle */
+  height: 55px;
   border-radius: 50%;
-  border: 2px solid #1e90ff;
+  border: 2px solid #1e90ff; /* blue highlight border */
   object-fit: cover;
+  transition: transform 0.2s ease;
 }
 
+.story img:hover {
+  transform: scale(1.05); /* subtle hover grow effect */
+}
+
+/* Event title below each story */
 .event-title {
-  font-size: 13px;
+  font-size: 11.5px; /* smaller text */
   font-weight: 500;
-  margin-top: 4px;
+  margin-top: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
+/* Event date text below title */
 .event-date {
-  font-size: 11px;
+  /* border: 2px solid red; */
+  font-size: 10px; /* smaller text */
   color: gray;
-  margin-top: 2px;
 }

@@ -1,1 +1,2 @@
-- upcoming events
+- upcoming events - fix sizing
+- feed images - fix layout

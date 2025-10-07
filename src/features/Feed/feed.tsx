@@ -3,8 +3,8 @@ import type { Post } from "../../types/posts";
 
 const posts: Post[] = [
   {
-    username: "Buddy 🐶",
-    image: "https://placedog.net/400/250",
+    username: "LunaTheLab 🐶",
+    image: "/images/Luna-the-lab/Luna-the-lab.jpg",
     caption: "Just had the best walk in the park!",
     avatar: "https://placedog.net/60",
   },
@@ -37,7 +37,14 @@ export default function Feed() {
               <h3 className="post-username">{post.username}</h3>
             </div>
 
-            <img src={post.image} alt={post.username} className="post-image" />
+            {/* Full-width image */}
+            <div className="post-image-container">
+              <img
+                src={post.image}
+                alt={post.username}
+                className="post-image"
+              />
+            </div>
 
             <div className="post-footer">
               <p>
