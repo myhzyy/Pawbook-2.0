@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
 
 import Header from "./features/Header/Header";
@@ -9,14 +9,19 @@ import Notifications from "./features/Pages/Notifacations/Notifacations";
 import MeetUps from "./features/Pages/MeetUps/meetUps";
 
 function App() {
+  const location = useLocation();
+  const hideUpcomingEvents = location.pathname === "/meetUps";
+
+  const pageContainerStyle = {
+    paddingTop: hideUpcomingEvents ? "50px" : "190px",
+  };
+
   return (
     <>
-      {/* ===== Header ===== */}
       <Header />
-      <UpcomingEvents />
+      {!hideUpcomingEvents && <UpcomingEvents />}
 
-      {/* ===== Main Routes Area ===== */}
-      <main className="page-container">
+      <main className="page-container" style={pageContainerStyle}>
         <Routes>
           <Route path="/" element={<Feed />} />
           <Route path="/notifacations" element={<Notifications />} />
@@ -24,7 +29,6 @@ function App() {
         </Routes>
       </main>
 
-      {/* ===== Footer ===== */}
       <Footer />
     </>
   );

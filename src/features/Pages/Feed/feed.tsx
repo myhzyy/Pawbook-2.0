@@ -1,5 +1,5 @@
 import "./feed.css";
-import type { Post } from "../../types/posts";
+import type { Post } from "../../../types/posts";
 
 const posts: Post[] = [
   {
