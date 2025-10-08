@@ -3,5 +3,7 @@
 - implement dog meetups page ✅
 - fix types ✅
 - hide Upcoming events on Meetups ✅
-- change css so upcoming events is in component
-- implement profile page
+- change css so upcoming events is in component ✅
+- implement profile page ✅
+- fix notifications and profile layout tab
+- change folder structure
