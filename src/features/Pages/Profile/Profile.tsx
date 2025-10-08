@@ -31,22 +31,28 @@ export default function Profile() {
             <h2 className="profile-name">{user.name}</h2>
             <p className="profile-bio">{user.breed}</p>
             <p className="profile-bio">{user.age} years</p>
+          </div>
+        </div>
 
-            <div className="profile-stats">
-              <div>
-                <strong>{user.posts}</strong>
-                <span>Posts</span>
-              </div>
-              <div>
-                <strong>{user.followers}</strong>
-                <span>Followers</span>
-              </div>
-              <div>
-                <strong>{user.following}</strong>
-                <span>Following</span>
-              </div>
-            </div>
-            {/* <p className="profile-bio">About {user.bio}</p> */}
+        <div className="profile-about-section">
+          <p className="profile-bio">
+            <span>About</span> <br />
+            {user.bio}
+          </p>
+        </div>
+
+        <div className="profile-stats">
+          <div>
+            <strong>{user.posts}</strong>
+            <span>Posts</span>
+          </div>
+          <div>
+            <strong>{user.followers}</strong>
+            <span>Followers</span>
+          </div>
+          <div>
+            <strong>{user.following}</strong>
+            <span>Following</span>
           </div>
         </div>
 

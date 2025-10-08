@@ -34,13 +34,22 @@
 .profile-bio {
   font-size: 0.9rem;
   color: #555;
-  margin: 2px 0; /* tighter vertical spacing */
-  line-height: 1.2; /* helps keep text compact but readable */
+  margin: 2px 0;
+  line-height: 1.2;
+}
+
+.profile-about-section {
+  padding: 0px 10px 0px;
+}
+
+.profile-about-section span {
+  font-weight: 800;
 }
 
 /* Stats */
 .profile-stats {
   display: flex;
+  justify-content: space-around;
   gap: 20px;
   margin-bottom: 12px;
 }
