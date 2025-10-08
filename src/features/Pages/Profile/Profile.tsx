@@ -1,3 +1,4 @@
+import UpcomingEvents from "../../../Components/UpcomingEvents/UpcomingEvents";
 import "./Profile.css";
 
 export default function Profile() {
@@ -20,46 +21,50 @@ export default function Profile() {
   ];
 
   return (
-    <section className="profile-page">
-      <div className="profile-header">
-        <img src={user.avatar} alt={user.name} className="profile-avatar" />
+    <>
+      <UpcomingEvents />
 
-        <div className="profile-info">
-          <h2 className="profile-name">{user.name}</h2>
-          <p className="profile-bio">{user.bio}</p>
+      <section className="profile-page">
+        <div className="profile-header">
+          <img src={user.avatar} alt={user.name} className="profile-avatar" />
 
-          <div className="profile-stats">
-            <div>
-              <strong>{user.posts}</strong>
-              <span>Posts</span>
-            </div>
-            <div>
-              <strong>{user.followers}</strong>
-              <span>Followers</span>
-            </div>
-            <div>
-              <strong>{user.following}</strong>
-              <span>Following</span>
-            </div>
-          </div>
+          <div className="profile-info">
+            <h2 className="profile-name">{user.name}</h2>
+            <p className="profile-bio">{user.bio}</p>
 
-          <div className="profile-buttons">
-            <button className="edit-btn">Edit Profile</button>
-            <button className="message-btn">Message</button>
+            <div className="profile-stats">
+              <div>
+                <strong>{user.posts}</strong>
+                <span>Posts</span>
+              </div>
+              <div>
+                <strong>{user.followers}</strong>
+                <span>Followers</span>
+              </div>
+              <div>
+                <strong>{user.following}</strong>
+                <span>Following</span>
+              </div>
+            </div>
+
+            <div className="profile-buttons">
+              <button className="edit-btn">Edit Profile</button>
+              <button className="message-btn">Message</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="profile-posts">
-        {posts.map((post, index) => (
-          <img
-            key={index}
-            src={post}
-            alt={`Post ${index + 1}`}
-            className="profile-post"
-          />
-        ))}
-      </div>
-    </section>
+        <div className="profile-posts">
+          {posts.map((post, index) => (
+            <img
+              key={index}
+              src={post}
+              alt={`Post ${index + 1}`}
+              className="profile-post"
+            />
+          ))}
+        </div>
+      </section>
+    </>
   );
 }

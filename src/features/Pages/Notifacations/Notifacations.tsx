@@ -1,5 +1,6 @@
 import "./Notifacations.css";
 import type { Notification } from "../../../types/notifacations";
+import UpcomingEvents from "../../../Components/UpcomingEvents/UpcomingEvents";
 
 const notifications: Notification[] = [
   {
@@ -24,20 +25,24 @@ const notifications: Notification[] = [
 
 export default function Notifications() {
   return (
-    <div className="notifications-container">
-      <h2 className="notifications-title">🔔 Notifications</h2>
+    <>
+      <UpcomingEvents />
 
-      <ul className="notifications-list">
-        {notifications.map((notif) => (
-          <li key={notif.id} className="notification-item">
-            <img src={notif.avatar} alt="avatar" className="notif-avatar" />
-            <div className="notif-content">
-              <p>{notif.message}</p>
-              <small>{notif.time}</small>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>
+      <div className="notifications-container">
+        <h2 className="notifications-title">🔔 Notifications</h2>
+
+        <ul className="notifications-list">
+          {notifications.map((notif) => (
+            <li key={notif.id} className="notification-item">
+              <img src={notif.avatar} alt="avatar" className="notif-avatar" />
+              <div className="notif-content">
+                <p>{notif.message}</p>
+                <small>{notif.time}</small>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
   );
 }

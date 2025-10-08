@@ -10,7 +10,7 @@ export default function MeetUps() {
       description:
         "Casual off-lead social for friendly dogs. Water bowls provided.",
       tags: ["All sizes", "Free", "Outdoor"],
-      image: "../../../../public/images/meet-ups/dog-meetup-park-1.png",
+      image: "/images/meet-ups/dog-meetup-park-1.png",
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ export default function MeetUps() {
       description:
         "Easy 3km stroll along the promenade. Leads required near cafés.",
       tags: ["Leads on", "Beginner"],
-      image: "../../../../public/images/meet-ups/dog-meetup-park-2.png",
+      image: "/images/meet-ups/dog-meetup-park-2.png",
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ export default function MeetUps() {
       description:
         "A fun morning meetup for puppies under 1 year. Gentle play only.",
       tags: ["Small breeds", "Puppies"],
-      image: "../../../../public/images/meet-ups/dog-meetup-park-3.png",
+      image: "/images/meet-ups/dog-meetup-park-3.png",
     },
   ];
 

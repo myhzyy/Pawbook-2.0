@@ -1,5 +1,6 @@
 import "./feed.css";
 import type { Post } from "../../../types/posts";
+import UpcomingEvents from "../../../Components/UpcomingEvents/UpcomingEvents";
 
 const posts: Post[] = [
   {
@@ -24,45 +25,49 @@ const posts: Post[] = [
 
 export default function Feed() {
   return (
-    <div className="feed-container">
-      <section className="posts">
-        {posts.map((post, index) => (
-          <article className="post-card" key={index}>
-            <div className="post-header">
-              <img
-                src={post.avatar}
-                alt={post.username}
-                className="post-avatar"
-              />
-              <h3 className="post-username">{post.username}</h3>
-            </div>
+    <>
+      <UpcomingEvents />
 
-            {/* Full-width image */}
-            <div className="post-image-container">
-              <img
-                src={post.image}
-                alt={post.username}
-                className="post-image"
-              />
-            </div>
-
-            <div className="post-footer">
-              <div className="like-and-comment">
-                <img src="/feed-icons/post-like.svg" alt="" />
-                <img src="/feed-icons/post-comment.svg" alt="" />
+      <div className="feed-container">
+        <section className="posts">
+          {posts.map((post, index) => (
+            <article className="post-card" key={index}>
+              <div className="post-header">
+                <img
+                  src={post.avatar}
+                  alt={post.username}
+                  className="post-avatar"
+                />
+                <h3 className="post-username">{post.username}</h3>
               </div>
 
-              <p className="image-likes">503 Likes</p>
+              {/* Full-width image */}
+              <div className="post-image-container">
+                <img
+                  src={post.image}
+                  alt={post.username}
+                  className="post-image"
+                />
+              </div>
 
-              <p>
-                <strong>{post.username}</strong> {post.caption}
-              </p>
+              <div className="post-footer">
+                <div className="like-and-comment">
+                  <img src="/feed-icons/post-like.svg" alt="" />
+                  <img src="/feed-icons/post-comment.svg" alt="" />
+                </div>
 
-              <p className="post-date">22nd august 2025</p>
-            </div>
-          </article>
-        ))}
-      </section>
-    </div>
+                <p className="image-likes">503 Likes</p>
+
+                <p>
+                  <strong>{post.username}</strong> {post.caption}
+                </p>
+
+                <p className="post-date">22nd august 2025</p>
+              </div>
+            </article>
+          ))}
+        </section>
+      </div>
+    </>
   );
 }
