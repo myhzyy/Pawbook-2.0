@@ -1,5 +1,7 @@
 - upcoming events - fix sizing ✅
 - feed images - fix layout ✅
-- implement dog meetups page
-- fix types
-- hide Upcoming events on Meetups
+- implement dog meetups page ✅
+- fix types ✅
+- hide Upcoming events on Meetups ✅
+- change css so upcoming events is in component
+- implement profile page

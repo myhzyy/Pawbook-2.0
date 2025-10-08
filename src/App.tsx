@@ -7,6 +7,7 @@ import UpcomingEvents from "./features/UpcomingEvents/UpcomingEvents";
 import Feed from "./features/Pages/Feed/feed";
 import Notifications from "./features/Pages/Notifacations/Notifacations";
 import MeetUps from "./features/Pages/MeetUps/meetUps";
+import Profile from "./features/Pages/Profile/Profile";
 
 function App() {
   const location = useLocation();
@@ -26,6 +27,7 @@ function App() {
           <Route path="/" element={<Feed />} />
           <Route path="/notifacations" element={<Notifications />} />
           <Route path="/meetUps" element={<MeetUps />} />
+          <Route path="profile" element={<Profile />} />
         </Routes>
       </main>
 

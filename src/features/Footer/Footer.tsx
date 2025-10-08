@@ -16,7 +16,10 @@ export default function Footer() {
       <Link to="/notifacations">
         <img src="/images/footer-icons/paw-like-icon.svg" alt="" />
       </Link>
-      <img src="/images/footer-icons/dog-profile-pic-icon.svg" alt="" />
+
+      <Link to="/profile">
+        <img src="/images/footer-icons/dog-profile-pic-icon.svg" alt="" />
+      </Link>
     </nav>
   );
 }

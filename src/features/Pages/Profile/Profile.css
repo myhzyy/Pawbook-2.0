@@ -1,0 +1,116 @@
+.profile-page {
+  padding: 190px 14px 80px; /* push below header + meetups bar */
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #222;
+  min-height: 100vh;
+}
+
+/* Header section */
+.profile-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.profile-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #1e90ff;
+  object-fit: cover;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.profile-bio {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 6px 0 10px;
+}
+
+/* Stats */
+.profile-stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 12px;
+}
+
+.profile-stats div {
+  text-align: center;
+}
+
+.profile-stats strong {
+  display: block;
+  font-size: 1rem;
+  color: #000;
+}
+
+.profile-stats span {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Buttons */
+.profile-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn,
+.message-btn {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+.edit-btn {
+  background: #1e90ff;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #007aff;
+}
+
+.message-btn {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.message-btn:hover {
+  background: #eaeaea;
+}
+
+/* Post grid */
+.profile-posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.profile-post {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.profile-post:hover {
+  transform: scale(1.02);
+}
