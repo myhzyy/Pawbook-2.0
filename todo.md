@@ -6,5 +6,5 @@
 - change css so upcoming events is in component ✅
 - implement profile page ✅
 - fix notifications ✅
-- profile layout tab
+- profile layout tab ✅
 - change folder structure

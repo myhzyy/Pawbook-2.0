@@ -1,6 +1,5 @@
 import "./Notifacations.css";
 import type { Notification } from "../../../types/notifacations";
-import UpcomingEvents from "../../../Components/UpcomingEvents/UpcomingEvents";
 
 const notifications: Notification[] = [
   {
@@ -26,10 +25,8 @@ const notifications: Notification[] = [
 export default function Notifications() {
   return (
     <>
-      <UpcomingEvents />
-
       <div className="notifications-container">
-        <h2 className="notifications-title">🔔 Notifications</h2>
+        <h2 className="notifications-title">Notifications</h2>
 
         <ul className="notifications-list">
           {notifications.map((notif) => (
