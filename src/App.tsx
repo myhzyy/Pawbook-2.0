@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={<Feed />} />
           <Route path="/meetUps" element={<MeetUps />} />
           <Route path="/notifacations" element={<Notifications />} />
-          <Route path="profile" element={<Profile />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </main>
 
