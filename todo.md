@@ -7,7 +7,9 @@
 - implement profile page ✅
 - fix notifications ✅
 - profile layout tab ✅
+- header icons ✅
+- footer tabs bigger on active ✅
+- blue on active ✅
+- change dog walk to svg version
 - change folder structure
-- header icons
-- footer tabs bigger on active
 - plan back end mongoDB database
