@@ -75,26 +75,6 @@
   gap: 10px;
 }
 
-.edit-btn,
-.message-btn {
-  border: none;
-  padding: 8px 14px;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-  font-size: 0.9rem;
-  transition: background 0.2s ease;
-}
-
-.edit-btn {
-  background: #1e90ff;
-  color: white;
-}
-
-.edit-btn:hover {
-  background: #007aff;
-}
-
 .message-btn {
   background: #f4f4f4;
   color: #333;

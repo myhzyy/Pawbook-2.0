@@ -3,11 +3,15 @@ import "./Header.css";
 export default function Header() {
   return (
     <nav className="navbar">
-      <button className="menu-btn">☰</button>
+      <img
+        className="header-images"
+        src="/images/Feed-icons/system-settings.svg"
+        alt=""
+      />
       <h2 className="logo">Pawbook 🐾</h2>
       <img
-        className="profile-pic"
-        src="https://placedog.net/50"
+        className="header-images"
+        src="/images/Feed-icons/add-friend.svg"
         alt="Profile"
       />
     </nav>

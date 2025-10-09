@@ -8,3 +8,6 @@
 - fix notifications ✅
 - profile layout tab ✅
 - change folder structure
+- header icons
+- footer tabs bigger on active
+- plan back end mongoDB database
